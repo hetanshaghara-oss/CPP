@@ -1,4 +1,4 @@
-//wap to find the max and min number in the array
+//shorting of array
 #include<iostream>
 using namespace std;
 
