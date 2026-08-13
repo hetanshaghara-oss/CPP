@@ -19,3 +19,12 @@ int main(){
       cout<<"MIN Number:"<<min<<endl;
     return 0;
 }
+
+
+
+
+
+
+
+
+
