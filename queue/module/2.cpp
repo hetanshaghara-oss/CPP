@@ -1,16 +1,10 @@
 #include<iostream>
 #include<queue>
 using namespace std;
-
-
  #define MAX 5 
     int q[MAX];
-
     int front= -1;
-    int rear = -1;
-
-    
-
+    int rear = -1; 
 void enqueue(int value){
    
      if( (rear+1) % MAX == front) {
@@ -21,16 +15,12 @@ void enqueue(int value){
         front = 0;
         rear = 0;
      }
-
      else{
         rear = (rear+1) % MAX ;
-        q[rear]= value;
-        
      }
 
-
+      q[rear]= value;
 }
-
 void dequeue(){
      if(front == -1){
         cout<<"Underflow!"<<endl;
@@ -44,12 +34,9 @@ void dequeue(){
           rear = -1;
        }
      else{
-       
          front = (front+1) % MAX;
      }
-
 }
-
 void display(){
     if(front == -1 && rear ==-1){
           cout<<"queue is the Empty!"<<endl;
@@ -62,13 +49,24 @@ void display(){
            if(i==rear){break;}
            i = (i + 1) % MAX;
         }
-        
     }
 }   
 int main(){
-     
-   
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    enqueue(40);
 
+    display();
 
+    dequeue();
+    dequeue();
+
+    display();
+
+    enqueue(50);
+    enqueue(60);
+
+    display();
     return 0;
 }
