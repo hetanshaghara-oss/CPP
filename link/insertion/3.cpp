@@ -30,7 +30,7 @@ int main() {
     second->next = third;
 
 
-    // -------- INSERT AT END --------
+    // insert at end
 
     // Create new node
     Node*  newNode = new Node;

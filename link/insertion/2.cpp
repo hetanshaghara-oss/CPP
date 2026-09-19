@@ -23,7 +23,7 @@ int main() {
     third->next = nullptr;
 
 
-    // Insert 5 at beginning
+    // In 5
     Node* newNode = new Node;
 
     newNode->data = 5;
