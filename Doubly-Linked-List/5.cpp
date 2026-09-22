@@ -47,6 +47,7 @@ int main(){
      int value = 200;
      bool Isfound = false;
 
+  //cheak the is this value is inside into the list or not
      while (temp!=nullptr)
      {
         
