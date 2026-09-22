@@ -1,6 +1,5 @@
 //delete the last element of the list
-
-//delete the node at the beginning of the list
+
 
 #include<iostream>
 using namespace std;
