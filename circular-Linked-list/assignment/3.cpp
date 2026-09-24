@@ -10,10 +10,14 @@ int main(){
 
     Node* first = new Node;
     first->data = 100;
+   
+    
+
+
 
     Node* second = new Node;
-      second->data = 200;
-
+    second->data = 200;
+     
      Node* third = new Node;
      third->data = 300;
 
@@ -26,7 +30,7 @@ int main(){
      fourth->next = first;
 
      head = first;
-
+    
      Node* LastNode = head;
      while (LastNode->next!=head)
      {
@@ -34,13 +38,9 @@ int main(){
      }
      
     tail = LastNode;
-
     Node*temp = head;
 
     head = head->next;
-    
-    
-    
     tail->next = head;
 
     delete temp;
@@ -53,7 +53,5 @@ int main(){
         temp = temp->next;
     } while (temp!=head);
     
-    
-     
     return 0;
 }

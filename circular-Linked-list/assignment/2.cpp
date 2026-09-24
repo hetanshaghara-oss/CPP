@@ -38,7 +38,7 @@ int main(){
 
 
      head = first;
-     tail = LastNode;
+     tail = LastNode; 
 
 
      int Value = 300 ;
@@ -66,11 +66,5 @@ int main(){
         temp = temp->next;
         /* code */
     } while (temp!=head);
-    
-
-
-
-
-    
     return 0;
 }
